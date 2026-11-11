@@ -34,7 +34,7 @@ int main(void)
   // numbers found in the array.  They begin at 0 because before we examine
   // any numbers in the array we have not found any numbers of any category yet.
   int positive_count = 0;
-  int negative_count = 0;1
+  int negative_count = 0;
   int zero_count = 0;    
   
   // The loop counter variable i will go from index 0 to 1 all the way to 

@@ -1,15 +1,11 @@
 /*******************************************************************************
-*
-* Program: Pointer Declarations: int* p vs. int *p 
-* 
+* Program: Pointer Declarations: int* p vs. int *p
+* 程序: 单行声明多个指针的语法陷阱
 * Description: Example code for a discussion about pointer declarations in C.
-*
+* 描述: 深入讲解 int* p1, p2 中 p2 实际为 int 而非指针的原因及推荐的 int *p 声明书写风格。
 * YouTube Lesson: https://www.youtube.com/watch?v=H5MlTh5cBOg
-*
 * Author: Kevin Browne @ https://portfoliocourses.com
-*
 *******************************************************************************/
-
 #include <stdio.h>
 
 int main()

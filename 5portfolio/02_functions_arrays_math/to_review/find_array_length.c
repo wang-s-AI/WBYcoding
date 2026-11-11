@@ -1,15 +1,11 @@
 /*******************************************************************************
-*
 * Program: Find The Length Of An Array Using sizeof()
-*
-* Description: Example of using the abort() function in C.
-*
+* 程序: 计算数组长度与 sizeof 宏
+* Description: Examples of calculating array length using the sizeof operator in C.
+* 描述: 演示利用 sizeof(arr)/sizeof(arr[0]) 计算数组元素个数的技巧与指针退化陷阱。
 * YouTube Lesson: https://www.youtube.com/watch?v=ZCzXhRkiBu4
-*
 * Author: Kevin Browne @ https://portfoliocourses.com
-*
 *******************************************************************************/
-
 #include <stdio.h>
 #include <stdlib.h>
 

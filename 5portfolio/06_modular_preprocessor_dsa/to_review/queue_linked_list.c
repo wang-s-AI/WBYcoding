@@ -191,7 +191,7 @@ int peek(Queue *queue, bool *status)
   if (is_empty(queue))
   {
     *status = false;
-    return NULL;
+    return 0;
   }
   
   // If the queue isn't empty, set the bool variable pointed to by status to 
@@ -247,7 +247,7 @@ int dequeue(Queue *queue, bool *status)
   if (is_empty(queue))
   {
     *status = false;
-    return NULL;
+    return 0;
   }
   
   // Otherwise we set the bool variable pointed to by status to true to indicate

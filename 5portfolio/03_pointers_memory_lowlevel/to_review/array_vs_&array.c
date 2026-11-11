@@ -1,17 +1,11 @@
 /*******************************************************************************
-*
 * Program: array vs &array Pointers Difference Explained
-* 
-* Description: A C example demonstrating the difference between the pointer we 
-* get when an array decays to a pointer compared to using the & operator with 
-* the array.
-*
-* YouTube Lesson: https://www.youtube.com/watch?v=WL1P6xiA_KY  
-*
+* 程序: array 与 &array 指针步长差异深度解析
+* Description: A C example demonstrating the difference between the pointer we get when an array decays to a pointer compared to using the & operator with the array.
+* 描述: 深入辨析一维数组名（退化为元素指针）与对数组取地址 &arr（数组指针）在地址和步长上的差异。
+* YouTube Lesson: https://www.youtube.com/watch?v=WL1P6xiA_KY
 * Author: Kevin Browne @ https://portfoliocourses.com
-*
 *******************************************************************************/
-
 #include <stdio.h>
 
 int main()

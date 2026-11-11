@@ -1,16 +1,11 @@
 /*******************************************************************************
-*
 * Program: Difference Between int main() vs int main(void)
-* 
-* Description: A program to help understand the difference between int main()
-* and int main(void) function prototypes in C.
-*
-* YouTube Lesson: https://www.youtube.com/watch?v=0DTToSTL02Q 
-*
+* 程序: int main() 与 int main(void) 的严格差异
+* Description: A program to help understand the difference between int main() and int main(void) function prototypes in C.
+* 描述: 深度对比 C 语言中 main()（接受任意参数）与 main(void)（严格不接受参数）的规范区别。
+* YouTube Lesson: https://www.youtube.com/watch?v=0DTToSTL02Q
 * Author: Kevin Browne @ https://portfoliocourses.com
-*
 *******************************************************************************/
-
 #include <stdio.h>
 
 // func1 has a 'blank' parameter list

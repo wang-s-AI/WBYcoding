@@ -1,15 +1,11 @@
 /*******************************************************************************
-*
 * Program: lvalues and rvalue errors
-* 
-* Description: Examples of lvalue and rvalue related errors in C.  
-*
+* 程序: 左值 (lvalue) 与右值 (rvalue) 概念与编译报错
+* Description: Examples of lvalue and rvalue related errors in C.
+* 描述: 深入讲解可寻址定位的左值与纯数值的右值概念，以及常见给非左值赋值触发的编译报错。
 * YouTube Lesson: https://www.youtube.com/watch?v=Ha-v53xIYXc
-*
 * Author: Kevin Browne @ https://portfoliocourses.com
-*
 *******************************************************************************/
-
 #include <stdio.h>
 
 // The terms lvalue and rvalue will come up in compiler error messages in C.

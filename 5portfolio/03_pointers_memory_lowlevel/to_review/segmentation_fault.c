@@ -1,17 +1,11 @@
 /*******************************************************************************
-*
 * Program: Segmentation Faults And Common Causes
-*
-* Description: Examples of common causes of segmentation faults in C.  See the
-* Wikipedia article on segmentation faults:
-*   https://en.wikipedia.org/wiki/Segmentation_fault
-*
-* YouTube Lesson: https://www.youtube.com/watch?v=T91q6ZngBk4  
-*
+* 程序: 常见段错误 (Segmentation Fault) 产生原因剖析
+* Description: Examples of common causes of segmentation faults in C.  See the Wikipedia article on segmentation faults: https://en.wikipedia.org/wiki/Segmentation_fault
+* 描述: 汇总演示越界访问、空指针解引用、未初始化野指针访问及栈溢出等常见段错误触发场景。
+* YouTube Lesson: https://www.youtube.com/watch?v=T91q6ZngBk4
 * Author: Kevin Browne @ https://portfoliocourses.com
-*
 *******************************************************************************/
-
 // A function which calls itself 'forever', i.e. infinite recursion
 void function()
 {
@@ -36,7 +30,7 @@ int main(void)
   int data[4] = {1,2,3,4};
 
   // We can safely access values in the range of indexes of the array
-  printf("%d\n", data[2];)
+  printf("%d\n", data[2]);
 
   // But accessing values far outside this range may cause a segmentation fault
   //

@@ -1,0 +1,36 @@
+/*******************************************************************************
+* Program: Print File Contents
+* 程序: 逐字符读取并回显文件内容
+* Description: Example of reading and printing a file's contents in C.
+* 描述: 演示使用 fgetc 循环遍历文本文件所有字符并打印到控制台屏幕。
+* YouTube Lesson: https://www.youtube.com/watch?v=fLPqn026DaE
+* Author: Kevin Browne @ https://portfoliocourses.com
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  // fh is the file handle we use to access the file
+  FILE *fh;
+  
+  // open the file in "read mode"
+  fh = fopen("file.txt", "r");
+  
+  // fopen will return NULL if the file wasn't opened successfully, so we 
+  // make sure it has opened OK before accessing the file
+  if (fh != NULL)
+  {
+    // read each character of the file one at a time until end of file (EOF) is 
+    // returned to signify the end of the file, output each char to the console
+    char c;
+    while ( (c = fgetc(fh)) != EOF )
+      putchar(c);
+    
+    // close the file handle as we are done with the file
+    fclose(fh);
+  
+  // if there was a problem opening the file, output an error message
+  } else printf("Error opening file.\n");
+  
+  return 0;
+}

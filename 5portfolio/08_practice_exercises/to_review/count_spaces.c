@@ -25,7 +25,7 @@ int main(void)
   int count = count_spaces(string);
 
   // Output the count
-  printf("Total Space Characters: %d\n", count)
+  printf("Total Space Characters: %d\n", count);
   
   return 0;
 }
