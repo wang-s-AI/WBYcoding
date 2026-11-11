@@ -1,0 +1,29 @@
+# === 编译产物与调试文件（C/C++） ===
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.pdb
+*.ilk
+
+# === 构建目录（以后学 C++ / CMake / ROS2 会用到） ===
+build/
+cmake-build-*/
+
+# === 编辑器与系统垃圾文件 ===
+.vscode/
+.vs/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 本仓库运行生成的大文件/临时文件 ===
+*.bin
+**/05_structs_enums_files/**/binary/file.txt
+temp____*
+log.txt
