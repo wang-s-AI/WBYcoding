@@ -24,7 +24,7 @@ using namespace std;
 // are the only two posibilities, so if the remainder is not 0 it will be 1,
 // and vice versa.
 
-bool isEven(int number);
+bool isEven(int number); 
 bool isOdd(int number);
 
 int main()
@@ -81,3 +81,8 @@ bool isOdd(int number)
   // we return false.
   return (number % 2 == 1);
 }
+/*把函数定义放在 main 后面，只是为了阅读时先看到主流程；如果不想写第 27–28 行的声明，
+也可以把 isEven 和 isOdd 的整个定义直接搬到 main 上面。
+(小补充：isOdd 第 82 行写的是 number % 2 == 1。如果以后输入负奇数比如 -3，
+在 C++ 里 -3 % 2 结果是 -1，不等于 1，会误判为偶数；写成 number % 2 != 0 或 
+!isEven(number)就能同时兼容负数。)*/
