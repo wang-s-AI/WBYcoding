@@ -24,7 +24,7 @@ using namespace std;
 // are the only two posibilities, so if the remainder is not 0 it will be 1,
 // and vice versa.
 
-bool isEven(int number); 
+bool isEven(int number); //自定义两个函数声明
 bool isOdd(int number);
 
 int main()
