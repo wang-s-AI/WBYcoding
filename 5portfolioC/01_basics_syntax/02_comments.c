@@ -7,16 +7,11 @@
 * Author: Kevin Browne @ https://portfoliocourses.com
 *******************************************************************************/
 /*
-* Multi-line comments might be used to create a "header" comment like this 
-* explaining the purpose of the file... like this comment (or the header comment
-* above!).
-*
+* Multi-line comments might be used to create a "header" comment like this explaining the 
+* purpose of the file... like this comment (or the header comment above!).
 * Program Name: C program to demo comments
-*
-* Author: Kevin Browne
-* 
+* Author: Kevin Browne 
 * Date: July 11th 2021.
-*
 */
 #include <stdio.h>
 
@@ -34,10 +29,7 @@ int main(void)
 
   /*
     Output the average to the user!
-
     Uses %d placeholder to ouput the average!
-
-
   */
   printf("Average: %d\n", total / LENGTH);
 

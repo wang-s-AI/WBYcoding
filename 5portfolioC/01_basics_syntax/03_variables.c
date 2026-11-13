@@ -49,7 +49,6 @@ int main(void)
   // if we uncomment the below line, c will store the character 'q'!
   //
   // char c = 113;
-
   // output the variables
   printf("position: %d\n", position);
   printf("x: %d, y: %d, z: %d\n", x,y,z);

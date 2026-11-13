@@ -1,16 +1,13 @@
 /*******************************************************************************
 * Program: Hello world example
-* 程序: Hello World 入门程序
 * Description: A "hello world" program in C.
-* 描述: 标准的 C 语言入门第一个程序，演示终端文本输出。
 * YouTube Lesson: https://www.youtube.com/watch?v=WXY-r9s0_Rg
-* Author: Kevin Browne @ https://portfoliocourses.com
 *******************************************************************************/
 // standard library that includes functions for input and output (like printf)
 #include <stdio.h>
 
 // the main function is where execution of statements will begin
-int main(void)
+int main(void) // the void in the parentheses means this function takes no arguments
 {
   // Outputs the text Hello, World! to the terminal (technically this is what
   // we'll call standard output), the " " characters define what's called a 
