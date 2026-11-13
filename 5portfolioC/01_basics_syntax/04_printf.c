@@ -64,6 +64,7 @@ int main(void)
   printf("double 占用的字节数: %zu\n", sizeof(double));
   printf("The size of a float in bytes %zu\n", sizeof(float));
   printf("The size of a char in bytes %zu\n", sizeof(char));
+  printf("The size of a long long in bytes %zu\n", sizeof(long long));
 
   return 0;
 }
