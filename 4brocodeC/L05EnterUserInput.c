@@ -1,38 +1,35 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
 
-    int age = 0;
-    float gpa = 0.0f;
-    char grade = '\0';
-    char name[50] = "";
+    int age = 0;                   // %dè¡¨ç¤ºåè¿›åˆ¶è¾“å‡º    
+    float gpa = 0.0f;              // %fè¡¨ç¤ºæµ®ç‚¹å‹è¾“å‡º
+    char grade = '\0';             // %cè¡¨ç¤ºå­—ç¬¦å‹è¾“å‡º
+    char name[50] = "";            // %sè¡¨ç¤ºå­—ç¬¦ä¸²è¾“å‡º
 
     printf("Enter your age: ");
-    scanf("%d", &age);
-    //& ÊÇÈ¡µØÖ·ÔËËã·û£¬ÓÃÓÚ»ñÈ¡±äÁ¿ age µÄÄÚ´æµØÖ·
+    scanf("%d", &age);             // & è¡¨ç¤ºå–åœ°å€
+    
 
     printf("Enter your gpa: ");
-    //µ±ÓÃ»§ÊäÈë 4.1 ²¢°´ÏÂ»Ø³µ¼üºó£¬±ê×¼ÊäÈë»º³åÇøÖĞµÄÔ­Ê¼ÄÚÈİÎª£º4.1\n
-    scanf("%f", &gpa);
-    //%f ¸ñÊ½ËµÃ÷·û»á¶ÁÈ¡²¢½âÎöÒ»¸ö¸¡µãÊı£¨Ìø¹ı¿ªÍ·µÄ¿Õ°××Ö·û£¬µ«ÕâÀï¿ªÍ·¾ÍÊÇ 4£©¡£
-    //ËüÒÀ´Î¶ÁÈ¡ '4', '.', '1'£¬½«Æä×ª»»Îª¸¡µãÊı 4.1 ²¢´æÈë±äÁ¿ gpa¡£
-    //×îÖÕ»º³åÇøÊ£ÓàÄÚÈİ\n
-
-    //scanf("%c", &grade)»áÖ±½Ó¶ÁÈ¡ÉÏÒ»¸ö»º³åÇø4.1\n²ĞÓàµÄ\n
+ 
+    scanf("%f", &gpa);                  //%fè¡¨ç¤ºæµ®ç‚¹å‹è¾“å‡º
+  
     printf("Enter your grade: ");
-    //ÓÃ»§ÊäÈë×ÖÄ¸ A ²¢°´ÏÂ»Ø³µ¼üºó£¬±ê×¼ÊäÈë»º³åÇøÖĞµÄÄÚÈİÎª£ºA\n
-    scanf(" %c", &grade); // The space before %c is to consume any leftover \n.
 
-    getchar(); // clears \n from input buffer
+    scanf(" %c", &grade);               //%cè¡¨ç¤ºå­—ç¬¦å‹è¾“å‡º
+
+    getchar();                          //æ¸…ç©ºç¼“å†²åŒº
     printf("Enter your full name: ");
-    fgets(name, sizeof(name), stdin);
-    name[strlen(name) - 1] = '\0'; //changes last char from \n to \0
+    fgets(name, sizeof(name), stdin);   //fgetsè¡¨ç¤ºè¯»å–ä¸€è¡Œ 
+    name[strlen(name) - 1] = '\0';      //strlenè¡¨ç¤ºå­—ç¬¦ä¸²é•¿åº¦
 
-    printf("%s\n", name);
-    printf("%d\n", age);
-    printf("%.2f\n", gpa);
-    printf("%c\n", grade);
+    printf("Name: %s\n", &name);        //%sè¡¨ç¤ºå­—ç¬¦ä¸²è¾“å‡º
+    printf("Age: %d\n", &age);          //%dè¡¨ç¤ºåè¿›åˆ¶è¾“å‡º
+    printf("GPA: %.2f\n", &gpa);        //%fè¡¨ç¤ºæµ®ç‚¹å‹è¾“å‡º
+    printf("Grade: %c\n", &grade);      //%cè¡¨ç¤ºå­—ç¬¦å‹è¾“å‡º
 
     return 0;
 }
