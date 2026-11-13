@@ -60,7 +60,7 @@ int main(void)
   printf("大数字: %lld\n", big_number);
 
 // 打印变量或类型占用的字节数（sizeof 返回 size_t 类型）
-  printf("int 占用的字节数: %zu\n", sizeof(int));
+  printf("int 占用的，字节数: %zu\n", sizeof(int));
   printf("double 占用的字节数: %zu\n", sizeof(double));
   printf("The size of a float in bytes %zu\n", sizeof(float));
   printf("The size of a char in bytes %zu\n", sizeof(char));
